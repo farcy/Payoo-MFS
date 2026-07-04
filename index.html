@@ -9,21 +9,28 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>     
 </head>
-<body class="bg-[#D9D9D9] h-[100vh] flex justify-center items-center">
+<body class="bg-[#D9D9D9] h-[100vh] flex flex-col justify-center items-center">
+
     
-    <form action="" class="  bg-white rounded-2xl p-5 border-none">
-        <div class="mt-">
-            <label for="">Mobile Number</label>
+    <div class="h-[130px] w-[300px] border-2 border-red-500">
+
+    </div>
+
+    <div>
+        <form action="" class=" w-[350px] bg-white rounded-2xl p-8 border-none">
+            <div class="">
+                <label for="" class="font-semibold">Mobile Number</label>
+                <br>
+                <input type="text" placeholder="Enter your number" class="input bg-[#F4F5F7] mt-3 rounded-3xl" />
+            </div>
+            <div class="mt-5">
+                <label for="" class="font-semibold">4 Digit Pin</label>
+                <br>
+                <input type="text" placeholder="Enter 4 digit PIN" class="input bg-[#F4F5F7] mt-3 rounded-3xl" />
+            </div>
             <br>
-            <input type="text" placeholder="Type here" class="input bg-[#F4F5F7] mt-3" />
-        </div>
-        <div class="mt-5">
-            <label for="">4 Digit Pin</label>
-            <br>
-            <input type="text" placeholder="Type here" class="input bg-[#F4F5F7] mt-3" />
-        </div>
-        <br>
-        <button class="btn btn-primary">Primary</button>
-    </form>
+            <button class="btn bg-[#0874F2] text-white w-full rounded-3xl">Login</button>
+        </form>
+    </div>
 </body>
 </html>
