@@ -13,13 +13,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body class="bg-[#D9D9D9] h-[100vh]">
-
-
+<body class="bg-[#D9D9D9] pb-8">
 
    <div class="max-w-lg mx-auto bg-white rounded-b-xl p-4">
      <!-- navbar  -->
-    <nav class=" min-h-[50px]  flex justify-between items-center  border-b-1 border-gray-400">
+    <nav class=" min-h-[50px]  flex justify-between items-center  border-b-1 border-gray-400 pb-4">
 
         <div class="flex items-center">
             <img src="./assets/Group.png" class="h-[50px] w-[50px]" alt="">
@@ -73,34 +71,44 @@
     </div>
    </div>
 
-
-
    <!-- form section -->
     <div class="all-form-section max-w-lg mx-auto mt-5">
         <!-- Add Money -->
          <div>
-            <h1>Add Money</h1>
-            <form action="" class="bg-white rounded-2xl p-8 border-none">
+            <h1 class="font-bold mb-4">Add Money</h1>
+            <form action="" class="bg-white rounded-2xl p-8 border-none ">
                 <div>
-                    <h1>Select A Bank</h1>
-                    <select class="select">
-                        <option disabled selected>Pick a color</option>
-                        <option>Crimson</option>
-                        <option>Amber</option>
-                        <option>Velvet</option>
+                    <label for="" class="font-semibold">Select A Bank</label>
+                    <br>
+                    <select class="select bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3">
+                        <option disabled selected>Brak Bank</option>
+                        <option>AB Bank</option>
+                        <option>City Bank</option>
+                        <option>Islami Bank</option>
                     </select>
                 </div>
                 <div>
-                    <h1>Bank Account Number</h1>
+                    
+                    <label for="" class="font-semibold">Bank Account Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3" />
                 </div>
                 <div>
-                    <h1>Amount to Add</h1>
+                    <label for="" class="font-semibold">Amount to Add</label>
+                    <br>
+                    <input type="text" placeholder="Add Amount to withdraw" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3" />
                 </div>
-                <div></div>
+                <div>
+                    <label for="" class="font-semibold">Pin Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3" />
+                </div>
+                <button class="btn bg-[#0874F2] text-white w-full rounded-3xl mt-4 mb-8">Add Money</button>
             </form>
          </div>
 
     </div>
 
+    <script src="./home.js"></script>
 </body>
 </html>
